@@ -1,0 +1,72 @@
+import { Speaker, Voice } from '../types';
+
+export const DEFAULT_SPEAKERS: Speaker[] = [
+  {
+    id: 1,
+    name: "Alex",
+    voice: Voice.Zephyr,
+    profession: "Tech Journalist",
+    tone: "Inquisitive",
+    mode: "Interviewer",
+    choiceOfWords: "Clear, concise, professional",
+    behavior: "Asks probing questions, guides the conversation, ensures clarity.",
+    pitch: "medium",
+    speed: "normal",
+    emotion: "neutral",
+    gender: "female",
+    accent: "Neutral",
+    language: "English",
+    isPrebuilt: true
+  },
+  {
+    id: 2,
+    name: "Jordan",
+    voice: Voice.Puck,
+    profession: "AI Researcher",
+    tone: "Analytical",
+    mode: "Educator",
+    choiceOfWords: "Technical, precise, insightful",
+    behavior: "Explains complex concepts, provides data, corrects misconceptions.",
+    pitch: "medium",
+    speed: "normal",
+    emotion: "neutral",
+    gender: "male",
+    accent: "Neutral",
+    language: "English",
+    isPrebuilt: true
+  },
+  {
+    id: 3,
+    name: "Casey",
+    voice: Voice.Fenrir,
+    profession: "Skeptic",
+    tone: "Cynical",
+    mode: "Debater",
+    choiceOfWords: "Sharp, questioning, direct",
+    behavior: "Challenges assumptions, plays devil's advocate, adds friction.",
+    pitch: "low",
+    speed: "normal",
+    emotion: "serious",
+    gender: "male",
+    accent: "American",
+    language: "English",
+    isPrebuilt: true
+  },
+  {
+    id: 4,
+    name: "Riley",
+    voice: Voice.Kore,
+    profession: "Storyteller",
+    tone: "Warm",
+    mode: "Narrator",
+    choiceOfWords: "Evocative, descriptive, engaging",
+    behavior: "Paints a picture, connects emotional dots, keeps the listener hooked.",
+    pitch: "medium",
+    speed: "slow",
+    emotion: "warm",
+    gender: "female",
+    accent: "British",
+    language: "English",
+    isPrebuilt: true
+  }
+];

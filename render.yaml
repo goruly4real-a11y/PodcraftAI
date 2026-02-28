@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: ai-podcast-studio
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: VITE_SUPABASE_URL
+        sync: false
+      - key: VITE_SUPABASE_ANON_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+    scaling:
+      minInstances: 1
+      maxInstances: 5
+      targetCPUPercent: 70
+      targetMemoryPercent: 70
